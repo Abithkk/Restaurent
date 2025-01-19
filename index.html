@@ -3,184 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Menu</title>
+    <title>Hotel Shree Shakthi Menu</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f8f8f8;
+            padding: 0;
+            background-color: #f8f9fa;
             color: #333;
         }
-
         header {
-            background-image: url('https://sapanarestaurant.com/wp-content/uploads/2019/11/authentic-chicken-biryani-900x601.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
+            background-color: #4CAF50;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 1rem 0;
         }
-
         header h1 {
-            font-size: 3em;
             margin: 0;
+            font-size: 2.5rem;
         }
-
         header p {
-            font-size: 1.2em;
-            margin: 10px 0 0;
+            margin: 5px 0 0;
+            font-size: 1rem;
         }
-
         .container {
             max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
-
-        .menu-section {
-            margin-bottom: 40px;
+        .section {
+            margin-bottom: 2rem;
         }
-
-        .menu-section h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ff6347;
+        .section h2 {
+            border-bottom: 2px solid #4CAF50;
             display: inline-block;
-            padding-bottom: 5px;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
         }
-
         .menu-item {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            border-bottom: 1px solid #ddd;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        .menu-item img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 15px;
+        .menu-item:nth-child(even) {
+            background-color: #f1f1f1;
         }
-
-        .menu-item .details {
-            flex: 1;
+        .menu-item span {
+            font-weight: bold;
         }
-
-        .menu-item h3 {
-            margin: 0;
-            font-size: 1.2em;
+        .price {
+            color: #4CAF50;
         }
-
-        .menu-item p {
-            margin: 5px 0 0;
-            color: #666;
-        }
-
-        .menu-item .price {
-            font-size: 1.2em;
-            color: #ff6347;
-        }
-
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: #333;
             color: white;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        footer a {
-            color: #ff6347;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Welcome to Gourmet Delights</h1>
-            <p>Experience the best dining in town</p>
-        </div>
-    </header>
 
-    <div class="container">
-        <div class="menu-section">
-            <h2>Appetizers</h2>
-            <div class="menu-item">
-                <img src="https://melissaeaton.com.au/wp-content/uploads/2020/02/EatonBalanced_Home_08-1-scaled.jpg" alt="Salad">
-                <div class="details">
-                    <h3>Caesar Salad</h3>
-                    <p>Crisp romaine lettuce, parmesan, and croutons</p>
-                </div>
-                <div class="price">₹8.99</div>
-            </div>
-            <div class="menu-item">
-                <img src="https://www.cookingclassy.com/wp-content/uploads/2020/10/tomato-soup-7.jpg" alt="Soup">
-                <div class="details">
-                    <h3>Tomato Soup</h3>
-                    <p>Rich and creamy with a hint of basil</p>
-                </div>
-                <div class="price">₹6.99</div>
-            </div>
-        </div>
+<header>
+    <h1>Hotel Shree Shakthi</h1>
+    <p>Veg & Non-Veg | Shyam Complex, Maruthi Veethika Udupi | Since 1993</p>
+</header>
 
-        <div class="menu-section">
-            <h2>Main Courses</h2>
-            <div class="menu-item">
-                <img src="https://sweetandsavorymeals.com/wp-content/uploads/2019/04/Grilled-Chicken-Recipe-3.jpg" alt="Steak">
-                <div class="details">
-                    <h3>Grilled Chicken</h3>
-                    <p>Juicy Chiken cooked to perfection</p>
-                </div>
-                <div class="price">₹18.99</div>
-            </div>
-            <div class="menu-item">
-                <img src="https://bakeitwithlove.com/wp-content/uploads/2022/01/Spaghetti-Bolognese-sq.jpg" alt="Pasta">
-                <div class="details">
-                    <h3>Spaghetti </h3>
-                    <p>Classic Italian pasta with a creamy sauce</p>
-                </div>
-                <div class="price">₹14.99</div>
-            </div>
+<div class="container">
+    <div class="section">
+        <h2>Biriyani</h2>
+        <div class="menu-item">
+            <span>Chicken Biriyani</span>
+            <span class="price">₹160/90</span>
         </div>
-
-        <div class="menu-section">
-            <h2>Desserts</h2>
-            <div class="menu-item">
-                <img src="https://source.unsplash.com/80x80/?cake" alt="Cake">
-                <div class="details">
-                    <h3>Chocolate Lava Cake</h3>
-                    <p>Warm and gooey with a molten center</p>
-                </div>
-                <div class="price">₹7.99</div>
-            </div>
-            <div class="menu-item">
-                <img src="https://source.unsplash.com/80x80/?ice-cream" alt="Ice Cream">
-                <div class="details">
-                    <h3>Vanilla Ice Cream</h3>
-                    <p>Rich and creamy, made with real vanilla</p>
-                </div>
-                <div class="price">₹4.99</div>
-            </div>
+        <div class="menu-item">
+            <span>Mutton Biriyani</span>
+            <span class="price">₹280/160</span>
+        </div>
+        <div class="menu-item">
+            <span>Prawns Biriyani</span>
+            <span class="price">₹240</span>
+        </div>
+        <div class="menu-item">
+            <span>Egg Biriyani</span>
+            <span class="price">₹120/70</span>
+        </div>
+        <div class="menu-item">
+            <span>Veg Biriyani</span>
+            <span class="price">₹140</span>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Gourmet Delights. All rights reserved. | <a href="#">Contact Us</a></p>
-    </footer>
+    <div class="section">
+        <h2>Sea Food</h2>
+        <div class="menu-item">
+            <span>Anjal Fry</span>
+            <span class="price">(Seasonal)</span>
+        </div>
+        <div class="menu-item">
+            <span>Pomfret Fry</span>
+            <span class="price">(Seasonal)</span>
+        </div>
+        <div class="menu-item">
+            <span>Muru Fry</span>
+            <span class="price">(Seasonal)</span>
+        </div>
+        <div class="menu-item">
+            <span>Bangude Fry</span>
+            <span class="price">(Seasonal)</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Extras</h2>
+        <div class="menu-item">
+            <span>Chapati</span>
+            <span class="price">₹15</span>
+        </div>
+        <div class="menu-item">
+            <span>Parota</span>
+            <span class="price">₹20</span>
+        </div>
+        <div class="menu-item">
+            <span>Jeera Rice</span>
+            <span class="price">₹100</span>
+        </div>
+        <div class="menu-item">
+            <span>Curd Rice</span>
+            <span class="price">₹70</span>
+        </div>
+        <div class="menu-item">
+            <span>Butter Milk</span>
+            <span class="price">₹15</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Soup</h2>
+        <div class="menu-item">
+            <span>Chicken Manchow Soup</span>
+            <span class="price">₹90</span>
+        </div>
+        <div class="menu-item">
+            <span>Veg Manchow Soup</span>
+            <span class="price">₹80</span>
+        </div>
+        <div class="menu-item">
+            <span>Chicken Hot & Sour Soup</span>
+            <span class="price">₹90</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Starter</h2>
+        <div class="menu-item">
+            <span>Chicken Chilly</span>
+            <span class="price">₹160</span>
+        </div>
+        <div class="menu-item">
+            <span>Paneer Chilly</span>
+            <span class="price">₹160</span>
+        </div>
+        <div class="menu-item">
+            <span>Mutton Manchurian</span>
+            <span class="price">₹230</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Hotel Shree Shakthi. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
